@@ -1,0 +1,40 @@
+name: Deployment pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  simple_deployment_pipeline:
+    if: ${{ !contains(join(github.event.commits.*.message, ' '), '#skip') }}
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.16.0"
+
+      - name: Event
+        run: |
+          echo "${{ github.event_name }}"
+
+      - name: Install
+        run: npm install
+
+      - name: Eslint # Task 11.5, 11.6
+        run: npm run eslint
+
+      - name: Build # Task 11.7
+        run: npm run build
+
+      - name: Test #Task 11.8
+        run: npm run test
+
+      - name: E2E #Task 11.9
+        uses: cypress-io/github-action@v5
+        with:
+          command: npm run test:e2e
+          start: npm run start-prod
+          wait-on: http://localhost:5000

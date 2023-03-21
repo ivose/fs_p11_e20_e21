@@ -1,0 +1,57 @@
+.error {
+    color: red;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.greenItalic {
+    color: green;
+    font-style: italic;
+}
+
+.greenItalicBig {
+    color: #006600;
+    font-style: bold;
+    font-size: 45px;
+}
+
+body {
+    padding: 2rem;
+}
+
+li {
+    color: grey;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+h5 {
+    color: grey;
+    font-size: 25px;
+    margin: 0 0 10 0;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+
+input {
+    padding: 0 5px;
+    height: 24px;
+    margin: 0px 5px;
+}
