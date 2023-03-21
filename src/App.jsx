@@ -321,7 +321,8 @@ const App = () => {
   }
 
   return <div>
-    <h1 className='greenItalicBig'>This is a small app</h1>
+    <h1 className='greenItalicBig'>This is a website</h1>
+    <p>Here can be watch, weather in different countries, course list, use public notes and phonebook.</p>
     <Countries
       countrySearchSubmit={countrySearchSubmit}
       countrySearch={countrySearch}

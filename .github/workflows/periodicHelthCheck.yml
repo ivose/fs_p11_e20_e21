@@ -1,4 +1,4 @@
-name: Perioding healthcheck
+name: Periodic healthcheck
 
 on:
   push:
