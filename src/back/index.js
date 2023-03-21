@@ -275,7 +275,6 @@ const useApp = (app) => {
     next(error)
   }
   app.use(errorHandler)
-
 }
 
 module.exports = { useApp }
