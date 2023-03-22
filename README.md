@@ -14,4 +14,4 @@ Start by running `npm install` inside the project folder
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
 
-## The result can see [here](https://ivoseosa11.onrender.com)
+## Sample result can be seen [here](https://fs-p11-e20-e21.fly.dev/)
